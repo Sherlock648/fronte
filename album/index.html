@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="frame flex flex-col items-center justify-start p-4 pt-20">
+        <div class="knop">
+            <div class="station-buttons">
+                <button id="all-btn" class="station-btn active">Artists</button>
+                <button id="fav-btn" class="station-btn inactive">Favorites</button>
+            </div>            
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="station-search" class="station-search" placeholder="Artists, album or track name...">
+            <img src="images/search.png" class="search-icon" alt="Search">
+        </div>
+
+        <ul id="all-stations" class="station-list">
+        <div class="container flex flex-wrap -mt-2">
+            <div class="photo-container">
+                <div class="circle photo1-container">
+                    <img src="images/photo1.jpg" alt="photo1" class="photo1-image">
+                </div>
+                <p class="photo-text">Альбом №1 </br > ★4,9</p>
+            </div>
+            
+            <div class="photo-container">
+                <div class="circle photo2-container">
+                    <img src="images/album2.jpg" alt="photo2" class="photo2-image">
+                </div>
+                <p class="photo-text">Альбом №2 </br > ★4,7</p>
+            </div>
+        
+            <div class="photo-container">
+                <div class="circle photo3-container">
+                    <img src="images/album3.jpg" alt="photo3" class="photo3-image">
+                </div>
+                <p class="photo-text">Альбом №3 </br > ★4,1</p>
+            </div>
+        
+            <div class="photo-container">
+                <div class="circle photo4-container">
+                    <img src="images/album4.png" alt="photo4" class="photo4-image">
+                </div>
+                <p class="photo-text">Альбом №4 </br > ★3,3</p>
+            </div>
+        </div>
+    </ul>
+
+        <ul id="fav-stations" class="station-list hidden">
+            <li class="station-item">
+                <img src="images/music1.png" class="icon-left" alt="Music">
+                <span>Олег Кензов - Белый снег</span>
+                <button class="fav-btn">
+                    <img src="images/heart1fill.png" class="icon-right" alt="Favorite">
+                </button>
+            </li>
+            <li class="station-item">
+                <img src="images/music1.png" class="icon-left" alt="Music">
+                <span>Олег Кензов - Гэй наливай </span>
+                <button class="fav-btn">
+                    <img src="images/heart1fill.png" class="icon-right" alt="Favorite">
+                </button>
+            </li>
+            <li class="station-item">
+                <img src="images/music1.png" class="icon-left" alt="Music">
+                <span>Олег Кензов - Жигули</span>
+                <button class="fav-btn">
+                    <img src="images/heart1fill.png" class="icon-right" alt="Favorite">
+                </button>
+            </li>
+            <li class="station-item">
+                <img src="images/music1.png" class="icon-left" alt="Music">
+                <span>Олег Кензов - Любить безумно</span>
+                <button class="fav-btn">
+                    <img src="images/heart1fill.png" class="icon-right" alt="Favorite">
+                </button>
+            </li>
+            <li class="station-item">
+                <img src="images/music1.png" class="icon-left" alt="Music">
+                <span>Олег Кензов - Марсеанин</span>
+                <button class="fav-btn">
+                    <img src="images/heart1fill.png" class="icon-right" alt="Favorite">
+                </button>
+            </li>
+            <li class="station-item">
+                <img src="images/music1.png" class="icon-left" alt="Music">
+                <span>Олег Кензов - По кайфу</span>
+                <button class="fav-btn">
+                    <img src="images/heart1fill.png" class="icon-right" alt="Favorite">
+                </button>
+            </li>
+            <li class="station-item">
+                <img src="images/music1.png" class="icon-left" alt="Music">
+                <span>Олег Кензов - Повелитель дискотек</span>
+                <button class="fav-btn">
+                    <img src="images/heart1fill.png" class="icon-right" alt="Favorite">
+                </button>
+            </li>
+        </ul>
+
+    <div class="top-buttons">
+        <button class="icon-button menu-button">
+            <img src="images/menu.png" alt="Menu" class="icon">
+        </button>
+
+        <button class="icon-button star-button">
+            <a href="#" class="wallet-item" id="wallet">
+            <img src="images/vector.png" alt="Star" class="icon">
+            </a>
+        </button>        
+    </div>
+
+    <footer class="footer" id="footer">
+        <a href="#" class="footer-item" id="player">
+            <img src="images/naush.png" alt="Player">
+            <span>Player</span>
+        </a>
+        <a href="#" class="footer-item active" id="wallet">
+            <img src="images/pap.png" alt="Wallet" class="pap-img">
+            <img src="images/music.png" alt="Music" class="music-img">
+            <span>Catalog</span>
+        </a>
+        <a href="#" class="footer-item" id="Favorites">
+            <img src="images/kvadr.png" alt="Favorites" class="fav-img">
+            <img src="images/littleheart.png" alt="littleheart" class="little1-img">
+            <img src="images/littleheart.png" alt="littleheart" class="little2-img">
+            <span>Favorites</span>
+        </a>        
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
